@@ -18,7 +18,10 @@ import Cookies from "js-cookie";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { resetpasswordremove } from "../../redux/features/auth/actions";
+import {
+  resetpasswordremove,
+  showLoginPage,
+} from "../../redux/features/auth/actions";
 import { setToast } from "../../utils/extraFunctions";
 
 export default function Forgetpassword() {
@@ -41,12 +44,13 @@ export default function Forgetpassword() {
     console.log(otp);
     if (otp === code) {
       try {
-        let res = await axios.post("/user/resetpassword", {
+        let res = await axios.post("/users/resetpassword", {
           data: { email: resetemail, password: resetepass },
         });
         dispatch(resetpasswordremove());
         setToast(toast, res.data, "success");
         Cookies.remove("otp");
+        dispatch(showLoginPage());
         navigate("/auth");
       } catch (error) {
         setToast(toast, error.response.data, "error");
@@ -107,13 +111,9 @@ export default function Forgetpassword() {
                   <PinInputField />
                 </PinInput>
                 <Button
-                  bg={"blue.400"}
+                  backgroundColor={"black"}
+                  _hover={{ backgroundColor: "#1e1e1e" }}
                   color={"white"}
-                  bgGradient="linear(to-r, red.400,pink.400)"
-                  _hover={{
-                    bgGradient: "linear(to-r, red.400,pink.400)",
-                    boxShadow: "xl",
-                  }}
                   onClick={handlesubmit}
                 >
                   Submit

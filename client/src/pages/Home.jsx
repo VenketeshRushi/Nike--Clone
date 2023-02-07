@@ -29,6 +29,12 @@ function Home() {
     navigate(`/${gender}`);
   };
 
+  const handlePath = () => {
+    dispatch(setNavbarPath("allProducts"));
+    setItemSession("path", "allProducts");
+    navigate("/allProducts");
+  };
+
   useEffect(() => {
     dispatch(getClothData());
     dispatch(getShoeData());
@@ -92,6 +98,7 @@ function Home() {
             _hover={{
               bgColor: "black",
             }}
+            onClick={handlePath}
           >
             Shop
           </Button>
@@ -105,6 +112,7 @@ function Home() {
             _hover={{
               bgColor: "black",
             }}
+            onClick={handlePath}
           >
             Watch
           </Button>
@@ -161,6 +169,7 @@ function Home() {
                 borderRadius={20}
                 color={"black"}
                 alignItems={"center"}
+                onClick={handlePath}
               >
                 Explore
               </Button>
@@ -171,6 +180,7 @@ function Home() {
                 borderRadius={20}
                 color={"black"}
                 alignItems={"center"}
+                onClick={handlePath}
               >
                 Top 10 Gifts
               </Button>
@@ -209,6 +219,7 @@ function Home() {
                 borderRadius={20}
                 color={"black"}
                 alignItems={"center"}
+                onClick={handlePath}
               >
                 Get It First
               </Button>

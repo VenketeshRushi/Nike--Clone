@@ -1,0 +1,35 @@
+[
+  {
+    "heading": "WOMEN'S SHOES COLLECTION",
+    "description":
+      "The Nike women's shoes collection have lot of varieties where you can find your perfect shoes for running, basketball, football, sneakers etc",
+    "gender": "women",
+    "img": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/e04a03c2-d7b0-4505-9e63-0625a6a0b52b/air-zoom-terra-kiger-7-trail-running-shoes-qPmVtm.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/c8f774ac-da90-47b0-92b0-2e6faa8dd5a3/go-flyease-shoe-5nWPkx.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/60f05e0f-25a1-46c8-8a05-8a13ba8f5e05/sb-shane-skate-shoes-mQcf7z.png"
+    ]
+  },
+  {
+    "heading": "MEN'S SHOES COLLECTION",
+    "description":
+      "The Nike men's shoes collection have lot of varieties where you can find your perfect shoes for running, basketball, football, sneakers etc",
+    "gender": "men",
+    "img": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/49fe6801-4b04-4d0a-85a6-4603309a4759/air-zoom-maxfly-more-uptempo-athletics-sprinting-spikes-rJlb4d.png",
+      "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/5a0a2260-a7b3-495a-b48c-1202eb9aab05/wio-8-road-running-shoes-S6jPM3.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/1622d34a-b828-4483-a974-74ca66bfb8b5/zoomx-vaporfly-next-2-road-racing-shoes-D4ntS0.png"
+    ]
+  },
+  {
+    "heading": "KID'S SHOES COLLECTION",
+    "description":
+      "The Nike kids's shoes collection have lot of varieties where you can find your perfect shoes for running, basketball, football, sneakers etc",
+    "gender": "kids",
+    "img": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/60b481c7-6d94-4ff1-9136-1ab90d66680f/flex-runner-2-older-road-running-shoes-RJPdh4.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/5af5e694-013c-4c19-9d9e-bb9e4556d650/revolution-5-older-road-running-shoes-mhfgMP.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/76e43df8-281b-429d-b40a-f732af1e8ed6/md-valiant-older-shoe-9b4q3K.png"
+    ]
+  }
+]

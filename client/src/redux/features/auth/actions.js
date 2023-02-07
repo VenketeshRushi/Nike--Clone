@@ -76,7 +76,7 @@ export const logoutFromAccount = (toast) => (dispatch) => {
 
 export const resetpassword = (data, toast, navigate) => async (dispatch) => {
   try {
-    let res = await axios.post("/user/checkmail", {
+    let res = await axios.post("/users/checkmail", {
       data,
     });
     dispatch({
