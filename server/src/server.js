@@ -12,6 +12,7 @@ const clothproductRouter = require("./controllers/product/cloth/cloth.router");
 const shoeproductRouter = require("./controllers/product/shoes/shoe.router");
 const favouriteRouter=require("./controllers/favourite/favourite.router");
 const orderRouter=require("./controllers/order/order.router")
+const paymentController = require('./controllers/payment.controller');
 
 const app = express();
 
@@ -27,6 +28,9 @@ app.use("/cloth", clothproductRouter);
 app.use("/shoe", shoeproductRouter);
 app.use("/favourite", favouriteRouter);
 app.use("/order", orderRouter);
+
+//Razorpay payment
+app.use("/api/payment", paymentController);
 
 
 app.listen(PORT, async () => {
