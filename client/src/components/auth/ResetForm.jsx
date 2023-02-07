@@ -4,13 +4,14 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { resetpassword } from "../../redux/features/auth/actions";
 
-export const ResetForm = () => {
+export const ResetForm = ({onClose}) => {
   const [resetemail, setresetemail] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const toast = useToast();
   const handleSubmitreset = () => {
     dispatch(resetpassword(resetemail, toast, navigate));
+    onClose();
   };
   return (
     <>

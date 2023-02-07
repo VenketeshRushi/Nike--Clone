@@ -29,7 +29,7 @@ export const Auth = () => {
                     </ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        {isLogin ? <LoginForm /> : isReset ? <ResetForm /> : <SignupForm />}
+                        {isLogin ? <LoginForm /> : isReset ? <ResetForm onClose={onClose} /> : <SignupForm />}
 
                         <Box textAlign={'center'} mt={'20px'}>
                             <Text display={'inline'} mt={'25px'} color={'#b0a8af'}>

@@ -52,7 +52,6 @@ function Home() {
             autostart="autostart"
             autoPlay="autoPlay"
             preload="auto"
-            muted={"muted"}
             role="application"
             tabIndex="-1"
             loop={"active"}
@@ -112,7 +111,6 @@ function Home() {
             _hover={{
               bgColor: "black",
             }}
-            onClick={handlePath}
           >
             Watch
           </Button>
