@@ -10,7 +10,7 @@ import axios from "axios";
 import { theme } from "./theme";
 import { store } from "./redux/store/store";
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://backend-nike.onrender.com";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
